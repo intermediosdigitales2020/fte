@@ -1,0 +1,160 @@
+body {
+    background-color: #fff;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+  }
+  
+  .wrapper {
+    width: 100%;
+    max-width: 968px; /* Agregamos un ancho máximo para que no ocupe toda la pantalla en pantallas grandes */
+    margin: 0 auto; /* Centrar el contenido horizontalmente */
+  }
+  
+  
+  
+
+/* Modificaciones para ajustar tamaño del banner */
+@media only screen and (min-width: 768px) {
+    .cp-seo-banner-responsive {
+      background-image: url(../../../assets/img/banner_principal.png);
+      height: 300px; /* Ajustar altura del banner en pantallas más grandes */
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .cp-seo-banner-responsive {
+      height: 400px; /* Ajustar altura del banner en pantallas más grandes */
+    }
+  }
+  
+  @media only screen and (min-width: 1280px) {
+    .cp-seo-banner-responsive {
+      height: 500px; /* Ajustar altura del banner en pantallas más grandes */
+    }
+  }
+  /* Copy from here  */
+  
+    .cp-seo-banner-responsive {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Mobile Background Image */
+  
+  .cp-seo-banner-responsive {
+    background-image: url(../../../assets/img/banner_mobiler.png);
+    height: 200px;
+  }
+  
+  @media only screen and (min-width: 400px) {
+  .cp-seo-banner-responsive {
+    height: 220px;
+  }
+  }
+  
+  /* Tablet Background Image */
+  
+  @media only screen and (min-width: 768px) {
+    .cp-seo-banner-responsive {
+    display: block;
+    background-image: url(../../../assets/img/banner_principal.png);
+      height: 200px;
+      justify-content: center;
+      align-items: center;
+  } 
+}
+
+.cardw {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-titlew {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.card-textw {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.card-textw p {
+    margin-bottom: 15px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+
+  }
+  
+  .card-body {
+    flex-direction: row;
+  }
+  
+  .image-container img {
+    width: 100%;
+    max-width: 200px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .text-container {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+  }
+  
+  .card-title {
+    text-align: center;
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 576px) {
+    .card-body {
+      flex-direction: column;
+    }
+    
+    .image-container img {
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+  
+  /* Estilo para el fondo del sidebar */
+#sidebar {
+  background-color: darkblue;
+  width: 100%;
+
+}
+
+/* Estilo para la letra de los enlaces */
+#sidebar .menu a {
+  color: white;
+}
+
+/* Estilo para cuando un enlace es seleccionado (click activo) */
+#sidebar .menu a:active {
+  background-color: lightblue;
+  color: black;
+}
+
+/* Media query para dispositivos con ancho de pantalla <= 768px */
+@media (max-width: 768px) {
+  .header-container {
+      display: none;  /* Oculta el navbar */
+  }
+}
